@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Contactar">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-2dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txtMensaje"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="monospace"
+                android:hint="Escribe un mensaje :)"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txtNumeroWhatsApp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Introduce el número telefónico de la persona (Incluyendo el código +52)"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonMandarMensajeWhatsApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/botones"
+            android:drawableStart="@drawable/whatsapp"
+            android:text="Mandar Mensaje vía WhatsApp"
+            android:textColor="@color/white" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

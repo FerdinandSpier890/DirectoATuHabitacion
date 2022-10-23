@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "382612216925",
+    "firebase_url": "https://directo-a-tu-habitacion-a9a8b-default-rtdb.firebaseio.com",
+    "project_id": "directo-a-tu-habitacion-a9a8b",
+    "storage_bucket": "directo-a-tu-habitacion-a9a8b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:382612216925:android:ac11795a5732bf082001b4",
+        "android_client_info": {
+          "package_name": "com.equipo09.directoatuhabitacion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "382612216925-gdricpmkfdo198u6ge63ue7timorlv2g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.equipo09.directoatuhabitacion",
+            "certificate_hash": "ee5c44b7b744a0c1d02de1f690dda1f150ec38bf"
+          }
+        },
+        {
+          "client_id": "382612216925-ds7avdu575vkum8pjtmgedcrkpioqvgd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6v5-Zd55bUTX0dUkr3OgyNebfUSc4Zug"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "382612216925-ds7avdu575vkum8pjtmgedcrkpioqvgd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

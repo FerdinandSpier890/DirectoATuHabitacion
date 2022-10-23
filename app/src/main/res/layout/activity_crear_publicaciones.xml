@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrearPublicaciones"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txtDescripcionPublicacion"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="monospace"
+                android:hint="@string/txtDescripcion"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonSeleccionarFoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botones"
+            android:text="Seleccionar Foto"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/buttonPublicar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/botones"
+            android:text="Publicar"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/fotoPublicacion"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/buttonVerPublicaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/botones"
+            android:text="Ver Publicaciones"
+            android:textColor="@color/white" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

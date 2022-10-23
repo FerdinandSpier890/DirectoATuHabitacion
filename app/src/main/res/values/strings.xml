@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Directo a tu Habitacion</string>
+
+    <string name="btnIniciarSesion">Iniciar Sesión</string>
+    <string name="btnRegistrar">Registrar</string>
+    <string name="cerrarSesion">Cerrar Sesión</string>
+
+    <string name="registroTXT">REGISTRO</string>
+    <string name="Nombres">Nombre Completo</string>
+    <string name="Apellidos">Apellidos</string>
+    <string name="Correo">Correo</string>
+    <string name="Contraseña">Contraseña</string>
+    <string name="Biogradía">Escribe una pequeña biografía tuya</string>
+    <string name="Edad">Edad</string>
+    <string name="Teléfono">Teléfono</string>
+    <string name="Departamento">Caracteristicas del Inmueble</string>
+    <string name="Dirección">Dirección</string>
+
+    <string name="registrarUsuario">REGISTRAME</string>
+
+    <string name="emailLogin">Correo Electronico</string>
+    <string name="passwordLogin">Contraseña</string>
+    <string name="INGRESAR">Ingresar</string>
+    <string name="ingresarGoogle">Iniciar Sesión con Google</string>
+
+    <string name="noInicioSesion">No se pudo iniciar sesión... Intente Nuevamente</string>
+    <string name="okNoInicioSesion">Entendido</string>
+
+    <string name="txtUID">UID: </string>
+    <string name="uIDPerfil"> -- </string>
+    <string name="txtCorreo">Correo: </string>
+    <string name="correoPerfil"> -- </string>
+    <string name="txtNombre">Nombre: </string>
+    <string name="nombresPerfil"> -- </string>
+    <string name="txtApellidos">Apellidos: </string>
+    <string name="apellidosPerfil"> -- </string>
+
+    <string name="misDatosOpcion">Mis Datos</string>
+    <string name="crearPublicacionOpcion">Crear Publicación</string>
+    <string name="verPublicaciones">Ver Publicaciones</string>
+    <string name="usuariosOpcion">Personas</string>
+    <string name="chatOpcion">Contactar</string>
+    <string name="cerrarSesion_2">Cerrar Sesión</string>
+
+    <string name="txtMisDatos">MIS DATOS PERSONALES</string>
+    <string name="datoUID">uID: </string>
+    <string name="txtDatoUID"> -- </string>
+    <string name="datoNombre">Nombre: </string>
+    <string name="txtDatoNombre"> -- </string>
+    <string name="datoApellido">Apellidos: </string>
+    <string name="txtDatoApellidos"> -- </string>
+    <string name="datoCorreo">Correo: </string>
+    <string name="txtDatoCorreo"> -- </string>
+    <string name="datoContraseña">Contraseña: </string>
+    <string name="txtDatoContraseña"> -- </string>
+    <string name="datoBiografía">Biografía: </string>
+    <string name="txtDatoBiografía"> -- </string>
+    <string name="datoEdad">Edad: </string>
+    <string name="txtDatoEdad"> -- </string>
+    <string name="datoTelefono">Teléfono: </string>
+    <string name="txtDatoTelefono"> -- </string>
+    <string name="datoDirección">Dirección: </string>
+    <string name="txtDatoDireccion"> -- </string>
+    <string name="datoInmueble">Inmueble: </string>
+    <string name="txtDatoInmueble"> -- </string>
+    <string name="actualizarDatos">Actualizar Datos</string>
+    <string name="actializarContraseña">Actualizar Contraseña</string>
+    <string name="seleccionarFoto">Seleccionar Foto</string>
+    <string name="subirFoto">Subir Foto</string>
+
+    <string name="misCredenciales">Mis Credenciales</string>
+    <string name="correoActual">Correo Actual: </string>
+    <string name="txtCorreoActual"> -- </string>
+    <string name="contraseñaActual">Contraseña Actual: </string>
+    <string name="txtContraseñaActual"> -- </string>
+    <string name="nuevaContraseña">Nueva Contraseña</string>
+    <string name="cambiarContraseña">Cambiar Contraseña</string>
+
+    <string name="txtNP">Escribe tu nombre tal cual estas registrado/registrada</string>
+    <string name="txtDescripcion">Añade una pequeña descripción</string>
+    <string name="txtFecha">Ingresa la fecha y hora actual</string>
+    <string name="txtHora">Ingresa la hora actual</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

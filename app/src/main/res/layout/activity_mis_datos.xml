@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".opciones.MisDatos">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtMisDatos"
+            android:fontFamily="monospace"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/datoFotoPerfil"
+            android:layout_width="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/usuario"/>
+        
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/datoUID"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="monospace"
+                android:layout_marginTop="3dp"/>
+
+            <EditText
+                android:id="@+id/txtDatoUID"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtDatoUID"
+                android:textSize="20sp"
+                android:enabled="false"
+                android:textColor="@color/black"
+                android:fontFamily="monospace"
+                android:layout_marginTop="3dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/datoNombre"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="monospace"
+                android:layout_marginTop="3dp"/>
+
+            <EditText
+                android:id="@+id/txtDatoNombre"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtDatoNombre"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="monospace"
+                android:layout_marginTop="3dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/datoApellido"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="monospace"
+                android:layout_marginTop="3dp"/>
+
+            <EditText
+                android:id="@+id/txtDatoApellidos"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtDatoApellidos"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="monospace"
+                android:layout_marginTop="3dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/datoCorreo"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="monospace"
+                android:layout_marginTop="3dp"/>
+
+            <EditText
+                android:id="@+id/txtDatoCorreo"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtDatoCorreo"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="monospace"
+                android:layout_marginTop="3dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/datoContraseña"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="monospace"
+                android:layout_marginTop="3dp"/>
+
+            <EditText
+                android:id="@+id/txtDatoContraseña"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:enabled="false"
+                android:text="@string/txtDatoContraseña"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="monospace"
+                android:layout_marginTop="3dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/datoBiografía"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="monospace"
+                android:layout_marginTop="3dp"/>
+
+            <EditText
+                android:id="@+id/txtDatoBiografía"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtDatoBiografía"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="monospace"
+                android:layout_marginTop="3dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/datoEdad"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="monospace"
+                android:layout_marginTop="3dp"/>
+
+            <EditText
+                android:id="@+id/txtDatoEdad"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtDatoEdad"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="monospace"
+                android:layout_marginTop="3dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/datoTelefono"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="monospace"
+                android:layout_marginTop="3dp"/>
+
+            <EditText
+                android:id="@+id/txtDatoTelefono"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtDatoTelefono"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="monospace"
+                android:layout_marginTop="3dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/datoDirección"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="monospace"
+                android:layout_marginTop="3dp"/>
+
+            <EditText
+                android:id="@+id/txtDatoDireccion"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtDatoDireccion"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="monospace"
+                android:layout_marginTop="3dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/datoInmueble"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="monospace"
+                android:layout_marginTop="3dp"/>
+
+            <EditText
+                android:id="@+id/txtDatoInmueble"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtDatoInmueble"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="monospace"
+                android:layout_marginTop="3dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <Button
+            android:id="@+id/buttonActualizarDatos"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botones"
+            android:text="@string/actualizarDatos"
+            android:drawableStart="@drawable/actualizar"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/buttonActualizarContraseña"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botones"
+            android:drawableStart="@drawable/password"
+            android:drawablePadding="10dp"
+            android:text="@string/actializarContraseña"
+            android:layout_marginTop="10dp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>

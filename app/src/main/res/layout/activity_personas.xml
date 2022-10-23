@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:layout_height="match_parent"
+    tools:context=".Personas">
+
+
+    <TextView
+        android:id="@+id/txtVerNombrePersona"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:fontFamily="monospace"
+        android:paddingTop="15dp"/>
+
+
+    <TextView
+        android:id="@+id/txtVerApellidoPersona"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:fontFamily="monospace"
+        android:paddingTop="15dp"/>
+
+
+    <TextView
+        android:id="@+id/txtVerTelefonoPersona"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:fontFamily="monospace"
+        android:paddingTop="15dp"/>
+
+    <TextView
+        android:id="@+id/txtVerBiografiaPersona"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:fontFamily="monospace"
+        android:paddingTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="30dp"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:fontFamily="monospace"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Lista de Personas" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <ListView
+            android:id="@+id/listViewVerDatosPersonas"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:layout_height="350dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonContactarPersona"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botones"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:text="Contactar"/>
+
+</LinearLayout>

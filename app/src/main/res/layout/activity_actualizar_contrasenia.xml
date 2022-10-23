@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".opciones.ActualizarContrasenia">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/misCredenciales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/misCredenciales"
+            android:fontFamily="monospace"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/correoActual"
+                android:fontFamily="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/txtCorreoActual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtCorreoActual"
+                android:textColor="@color/black"
+                android:fontFamily="monospace"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contraseñaActual"
+                android:fontFamily="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/txtContraseñaActual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtContraseñaActual"
+                android:textColor="@color/black"
+                android:fontFamily="monospace"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/txtActualizarContraseña"
+                android:hint="Contraseña Actual"
+                android:fontFamily="monospace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                app:passwordToggleEnabled="true"
+                android:importantForAutofill="no"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txtNuevaContraseña"
+                android:layout_width="match_parent"
+                android:fontFamily="monospace"
+                android:layout_height="wrap_content"
+                android:hint="@string/nuevaContraseña"
+                app:passwordToggleEnabled="true"
+                android:importantForAutofill="no"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonCambiarContraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/cambiarContraseña"
+            android:background="@drawable/botones"
+            android:layout_marginTop="20dp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>
