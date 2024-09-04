@@ -1,49 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="300dp"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:boarder="http://schemas.android.com/tools"
-    app:cardElevation="1dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
     app:cardUseCompatPadding="true"
-    app:contentPadding="3dp"
-    app:cardBackgroundColor="@color/white">
+    app:contentPadding="8dp">
 
     <LinearLayout
-        android:layout_margin="10dp"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="monospace"
-            android:id="@+id/txtUsuarioPublicacion"
-            android:textColor="@color/black"
-            android:textSize="20sp"/>
+            android:orientation="horizontal"
+            android:padding="8dp">
 
+            <!-- Foto de perfil del usuario -->
+            <ImageView
+                android:id="@+id/fotoPerfilUsuario"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/usuario"
+                android:scaleType="centerCrop" />
+
+            <!-- Nombre de usuario y fecha de publicación -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtUsuarioPublicacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtFechaPublicacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Descripción de la publicación -->
         <TextView
+            android:id="@+id/txtDescripcionPublicacion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="monospace"
-            android:id="@+id/txtTituloPublicacion"
+            android:layout_marginTop="8dp"
             android:textColor="@color/black"
-            android:textSize="20sp"/>
+            android:textSize="16sp" />
 
+        <!-- Imagen de la publicación -->
+        <ImageView
+            android:id="@+id/imagenPublicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <!-- Barra de progreso (si se está cargando una imagen) -->
         <ProgressBar
             android:id="@+id/progressGaleria"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:visibility="gone" />
 
-        </ProgressBar>
-
-        <ImageView
-            android:visibility="gone"
-            android:layout_width="wrap_content"
-            android:layout_height="200dp"
-            android:id="@+id/imagenPublicacion"/>
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

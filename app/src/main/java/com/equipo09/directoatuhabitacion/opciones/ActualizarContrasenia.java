@@ -85,6 +85,7 @@ public class ActualizarContrasenia extends AppCompatActivity {
                     txtCorreoActual.setText(correo);
                     txtContraseñaActual.setText(contraseña);
                 }
+
             }
 
             @Override

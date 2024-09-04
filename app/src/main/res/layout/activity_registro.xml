@@ -34,6 +34,12 @@
 
         </androidx.appcompat.widget.AppCompatImageView>
 
+        <Button
+            android:id="@+id/botonSeleccionarFoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar Foto"/>
+
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >

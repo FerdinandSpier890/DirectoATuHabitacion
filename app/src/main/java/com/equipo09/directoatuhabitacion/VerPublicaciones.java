@@ -68,6 +68,7 @@ public class VerPublicaciones extends AppCompatActivity {
                     }
                     galeriaAdapter.notifyDataSetChanged();
                 }
+
             }
 
             @Override

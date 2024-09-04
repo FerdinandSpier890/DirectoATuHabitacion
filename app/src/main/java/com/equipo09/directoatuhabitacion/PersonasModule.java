@@ -13,6 +13,7 @@ public class PersonasModule {
     private String Apellidos;
     private String Teléfono;
     private String Biografía;
+    private String FotoPerfil;
 
     public String getuID() {
         return uID;
@@ -52,6 +53,14 @@ public class PersonasModule {
 
     public void setBiografía(String biografía) {
         Biografía = biografía;
+    }
+
+    public String getFotoPerfil() {
+        return FotoPerfil;
+    }
+
+    public void setFotoPerfil(String fotoPerfil) {
+        FotoPerfil = fotoPerfil;
     }
 
     @NonNull

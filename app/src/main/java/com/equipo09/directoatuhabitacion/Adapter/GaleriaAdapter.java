@@ -42,8 +42,13 @@ public class GaleriaAdapter extends RecyclerView.Adapter<GaleriaAdapter.FotosVie
     @Override
     public void onBindViewHolder(@NonNull FotosViewHolder holder, int position) {
         Galeria galeria = galeriaList.get(position);
-        holder.txtUsuario.setText(galeria.getUsuario());
+        holder.txtUsuario.setText(galeria.getNombreUsuario());
         holder.txtDescripcion.setText(galeria.getDescipcion());
+        holder.txtFechaPublicacion.setText(galeria.getFechaPublicacion());
+
+        // Cargar la foto de perfil del usuario
+        Picasso.get().load(galeria.getFotoPerfilUsuario()).into(holder.fotoPerfilUsuario);
+
         Picasso.get().load(galeria.getFoto()).into(holder.fotoPublicacion, new Callback() {
             @Override
             public void onSuccess() {
@@ -64,15 +69,19 @@ public class GaleriaAdapter extends RecyclerView.Adapter<GaleriaAdapter.FotosVie
     }
 
     public class FotosViewHolder extends RecyclerView.ViewHolder {
-        TextView txtDescripcion, txtUsuario;
-        ImageView fotoPublicacion;
+        TextView txtDescripcion, txtUsuario, txtFechaPublicacion;
+        ImageView fotoPublicacion, fotoPerfilUsuario;
         ProgressBar barraProgreso;
+
         public FotosViewHolder(@NonNull View itemView) {
             super(itemView);
-            txtDescripcion = itemView.findViewById(R.id.txtTituloPublicacion);
+            //txtDescripcion = itemView.findViewById(R.id.txtTituloPublicacion);
             txtUsuario = itemView.findViewById(R.id.txtUsuarioPublicacion);
+            txtDescripcion= itemView.findViewById(R.id.txtDescripcionPublicacion);
+            txtFechaPublicacion = itemView.findViewById(R.id.txtFechaPublicacion);
             fotoPublicacion = itemView.findViewById(R.id.imagenPublicacion);
             barraProgreso = itemView.findViewById(R.id.progressGaleria);
+            fotoPerfilUsuario = itemView.findViewById(R.id.fotoPerfilUsuario);
         }
     }
 }

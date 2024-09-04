@@ -2,15 +2,25 @@ package com.equipo09.directoatuhabitacion.Pojos;
 
 public class Galeria {
 
-    String uID, descipcion, foto, usuario;
+    String uID, descipcion, nombreUsuario, fechaPublicacion, foto, fotoPerfilUsuario;
 
     public Galeria() {
     }
 
-    public Galeria(String uID, String usuario, String descipcion, String foto) {
+    public Galeria(String uID, String descipcion, String nombreUsuario, String fechaPublicacion, String foto, String fotoPerfilUsuario) {
         this.uID = uID;
-        this.usuario = usuario;
         this.descipcion = descipcion;
+        this.nombreUsuario = nombreUsuario;
+        this.fechaPublicacion = fechaPublicacion;
+        this.foto = foto;
+        this.fotoPerfilUsuario = fotoPerfilUsuario;
+    }
+
+    public Galeria(String uID, String descipcion, String nombreUsuario, String fechaPublicacion, String foto) {
+        this.uID = uID;
+        this.descipcion = descipcion;
+        this.nombreUsuario = nombreUsuario;
+        this.fechaPublicacion = fechaPublicacion;
         this.foto = foto;
     }
 
@@ -22,14 +32,6 @@ public class Galeria {
         this.uID = uID;
     }
 
-    public String getUsuario() {
-        return usuario;
-    }
-
-    public void setUsuario(String usuario) {
-        this.usuario = usuario;
-    }
-
     public String getDescipcion() {
         return descipcion;
     }
@@ -38,11 +40,34 @@ public class Galeria {
         this.descipcion = descipcion;
     }
 
+    public String getNombreUsuario() {
+        return nombreUsuario;
+    }
+
+    public void setNombreUsuario(String nombreUsuario) {
+        this.nombreUsuario = nombreUsuario;
+    }
+
+    public String getFechaPublicacion() {
+        return fechaPublicacion;
+    }
+
+    public void setFechaPublicacion(String fechaPublicacion) {
+        this.fechaPublicacion = fechaPublicacion;
+    }
+
     public String getFoto() {
         return foto;
     }
 
     public void setFoto(String foto) {
         this.foto = foto;
+    }
+
+    public String getFotoPerfilUsuario() {
+        return fotoPerfilUsuario;
+    }
+    public void setFotoPerfilUsuario(String fotoPerfilUsuario) {
+        this.fotoPerfilUsuario = fotoPerfilUsuario;
     }
 }

@@ -29,6 +29,16 @@
             android:layout_height="150dp"
             android:layout_gravity="center"
             android:src="@drawable/usuario"/>
+
+        <Button
+            android:id="@+id/buttonSeleccionarFoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seleccionarFoto"
+            android:layout_gravity="center"
+            android:background="@drawable/botones"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"/>
         
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
@@ -329,6 +339,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/botones"
             android:text="@string/actualizarDatos"
+            android:textColor="@color/white"
             android:drawableStart="@drawable/actualizar"
             android:drawablePadding="10dp"
             android:layout_marginTop="20dp"/>
@@ -340,6 +351,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/botones"
             android:drawableStart="@drawable/password"
+            android:textColor="@color/white"
             android:drawablePadding="10dp"
             android:text="@string/actializarContraseña"
             android:layout_marginTop="10dp"/>

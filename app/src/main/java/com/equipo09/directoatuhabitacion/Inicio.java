@@ -167,7 +167,7 @@ public class Inicio extends AppCompatActivity {
                     String nombre = "" + dataSnapshot.child("Nombre").getValue();
                     String apellido = "" + dataSnapshot.child("Apellidos").getValue();
                     String correo = "" + dataSnapshot.child("Correo").getValue();
-                    String imagen = "" + dataSnapshot.child("Imagen").getValue();
+                    String imagen = "" + dataSnapshot.child("FotoPerfil").getValue();
 
                     //Hacemos uso del set para poner los datos en nuestras vistas
                     textoUID.setText(uid);
